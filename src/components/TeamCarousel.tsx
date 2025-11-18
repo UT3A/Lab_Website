@@ -218,8 +218,8 @@ export function TeamCarousel() {
             >
               {[
                 { number: '1', label: '教授' },
-                { number: '2', label: '博士生' },
-                { number: '6+', label: '碩士生' },
+                { number: '1', label: '博士生' },
+                { number: '10+', label: '碩士生' },
               ].map((stat, index) => (
                 <div key={index} className="space-y-2">
                   <div
@@ -235,7 +235,7 @@ export function TeamCarousel() {
                   <div
                     style={{
                       fontSize: '13px',
-                      color: 'rgba(255, 255, 255, 0.4)',
+                      color: '#01579B',
                       letterSpacing: '0.05em',
                     }}
                   >

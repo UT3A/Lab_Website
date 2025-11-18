@@ -190,7 +190,7 @@ export function ResearchSection() {
                       style={{
                         fontSize: '15px',
                         fontWeight: 300,
-                        color: 'rgba(255, 255, 255, 0.8)',
+                        color: '#0277BD',
                         lineHeight: 1.8,
                       }}
                     >
@@ -209,7 +209,7 @@ export function ResearchSection() {
                   <motion.button
                     className="group relative px-8 py-3 rounded-lg overflow-hidden"
                     style={{
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      border: '2px solid hsla(214, 87%, 30%, 0.20)',
                       fontSize: '14px',
                       fontWeight: 400,
                     }}
