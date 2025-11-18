@@ -89,10 +89,9 @@
     --color-slate-500: oklch(.554 .046 257.417);
     --color-slate-700: oklch(.372 .044 257.287);
     --color-slate-800: oklch(.279 .041 260.031);/*不是他*/
-    /*--color-slate-900: oklch(.208 .042 265.755);*/
     --color-slate-900: #E1F5FE;
     /*--color-slate-950: oklch(.129 .042 264.695);原主底色*/
-    --color-slate-950: oklch(94.815% 0.02487 246.313);
+    --color-slate-950: oklch(94.815% 0.02487 246.313 / 0.822);
     --color-gray-100: oklch(.967 .003 264.542);
     --color-gray-200: oklch(.928 .006 264.531);
     --color-gray-300: oklch(.872 .01 258.338);

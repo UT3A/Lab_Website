@@ -80,8 +80,24 @@ export function PhilosophySection() {
                   letterSpacing: '0.05em',
                 }}
               >
-                核心理念
               </motion.p>
+
+              {/* English Title with Gradient */}
+                <div className="relative inline-block pt-4">
+                  <h3
+                    className="relative z-10"
+                    style={{
+                      fontSize: 'clamp(42px, 5.5vw, 64px)',
+                      fontWeight: 600,
+                      background: 'linear-gradient(135deg, #14b8a6 0%, #06b6d4 50%, #0ea5e9 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                      lineHeight: 1.1,
+                    }}
+                  >
+                    核心理念
+                  </h3>
 
               {/* Chinese Title */}
               <div className="space-y-2">
@@ -98,23 +114,9 @@ export function PhilosophySection() {
                   必須持續保有對知識的渴望
                 </h2>
                 
-                {/* English Title with Gradient */}
-                <div className="relative inline-block pt-4">
-                  <h3
-                    className="relative z-10"
-                    style={{
-                      fontSize: 'clamp(42px, 5.5vw, 64px)',
-                      fontWeight: 600,
-                      background: 'linear-gradient(135deg, #a855f7 0%, #8b5cf6 50%, #7c3aed 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                      lineHeight: 1.1,
-                    }}
-                  >
-                  </h3>
+                
                   
-                  {/* Purple Underline */}
+                  {/* Purple Underline 
                   <motion.div
                     initial={{ scaleX: 0 }}
                     animate={isInView ? { scaleX: 1 } : {}}
@@ -124,7 +126,7 @@ export function PhilosophySection() {
                       background: 'linear-gradient(90deg, #a855f7 0%, #8b5cf6 100%)',
                       borderRadius: '2px',
                     }}
-                  />
+                  />*/}
                 </div>
               </div>
 
