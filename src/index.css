@@ -76,7 +76,7 @@
     --color-orange-500: oklch(.705 .213 47.604);
     --color-yellow-400: oklch(.852 .199 91.936);
     --color-cyan-300: oklch(0.62 0.19 245.13);/*表達字*/
-    --color-cyan-400: oklch(.789 .154 211.53);
+    --color-cyan-400: oklch(0.48 0.1 212.39);
     --color-cyan-500: oklch(.715 .143 215.221);
     --color-blue-500: oklch(.623 .214 259.815);/*logo底混色大宗*/
     /*--color-blue-600: oklch(.546 .245 262.881);logo底*/

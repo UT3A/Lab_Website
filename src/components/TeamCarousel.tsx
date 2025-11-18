@@ -22,7 +22,7 @@ const professor: TeamMember = {
   nameEn: 'Prof. Cheng',
   title: '實驗室主持人',
   role: 'Principal Investigator',
-  image: 'https://images.unsplash.com/photo-1758685848602-09e52ef9c7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzY2llbnRpc3QlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjA3ODI3MTF8MA&ixlib=rb-4.1.0&q=80&w=1080',
+  image: 'img/老師.jpg',
   email: 'jessicacheng@ntut.edu.tw',
   expertise: ['機器學習與數據分析','數位金融','智慧行銷','社群運算','企業智慧'],
   description: '專注於人工智慧技術應用於財務或是行銷與管理領域,成立目的訓練學生成為資料科學家。',
@@ -387,7 +387,7 @@ export function TeamCarousel() {
                     <p
                       style={{
                         fontSize: '13px',
-                        color: 'rgba(255, 255, 255, 0.6)',
+                        color: '#0277BD',
                         lineHeight: 1.7,
                       }}
                     >
@@ -401,8 +401,8 @@ export function TeamCarousel() {
                           key={index}
                           className="px-3 py-1 rounded-full text-xs"
                           style={{
-                            background: 'rgba(14, 165, 233, 0.15)',
-                            color: 'rgba(125, 211, 252, 1)',
+                            background: 'rgba(255, 255, 255, 0.64)',
+                            color: '#0277BD',
                             border: '1px solid rgba(14, 165, 233, 0.3)',
                           }}
                         >
