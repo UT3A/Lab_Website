@@ -22,7 +22,7 @@ const professor: TeamMember = {
   nameEn: 'Prof. Cheng',
   title: '實驗室主持人',
   role: 'Principal Investigator',
-  image: 'img/老師.jpg',
+  image: 'src/assets/老師.jpg',
   email: 'jessicacheng@ntut.edu.tw',
   expertise: ['機器學習與數據分析','數位金融','智慧行銷','社群運算','企業智慧'],
   description: '專注於人工智慧技術應用於財務或是行銷與管理領域,成立目的訓練學生成為資料科學家。',
