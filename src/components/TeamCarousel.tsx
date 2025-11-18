@@ -367,7 +367,7 @@ export function TeamCarousel() {
                         style={{
                           fontSize: '28px',
                           fontWeight: 300,
-                          color: '#ffffff',
+                          color: '#0277BD',
                           marginBottom: '4px',
                         }}
                       >
