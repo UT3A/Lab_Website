@@ -185,11 +185,11 @@ export function HeroCarousel() {
                   className="inline-block px-6 py-2 rounded-full text-xs tracking-widest"
                   style={{
                     //background: 'rgba(255, 183, 77, 0.15)',
-                    background: 'rgba(216, 228, 238, 0.15)',
+                    background: '#14b8a513',
                     //border: '1px solid rgba(255, 152, 0, 0.3)',
-                    border: '1px solid rgba(5, 99, 156, 0.37)',
+                    border: '1px solid rgba(5, 98, 156, 0.15)',
                     //color: '#E65100',
-                    color: 'rgba(2, 119, 189, 1)',
+                    color: '#0277BD',
                   }}
                 >
                   {currentSlide.tag}

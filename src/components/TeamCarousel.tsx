@@ -343,9 +343,14 @@ export function TeamCarousel() {
                 className="text-white"
                 style={{
                   fontSize: 'clamp(36px, 5vw, 56px)',
-                  fontWeight: 200,
+                  fontWeight: 800,
                   lineHeight: 1.2,
                   letterSpacing: '-1px',
+                  background: 'linear-gradient(135deg, #14b8a6 0%, #06b6d4 50%, #0ea5e9 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  lineHeight: 1.1,
                 }}
               >
                 團隊成員

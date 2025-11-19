@@ -67,9 +67,7 @@ export function JoinSection() {
               letterSpacing: '0.05em',
             }}
           >
-            在這飛速成長的時代
-            <br />
-            必須持續保有對知識的渴望
+            
           </motion.p>
 
           {/* Main Title */}
@@ -324,7 +322,7 @@ export function JoinSection() {
                   style={{
                     fontSize: '14px',
                     fontWeight: 300,
-                    color: 'rgba(255, 255, 255, 0.6)',
+                    color: '#0277BD',
                     lineHeight: 1.8,
                   }}
                 >

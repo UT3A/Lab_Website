@@ -125,7 +125,7 @@ export function ResearchSection() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 w-full flex-1 flex flex-col justify-center">
           {/* Main Content Area */}
           <div className="max-w-3xl space-y-8 lg:space-y-12">
-            {/* Section Label */}
+            {/* Section Label 
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -137,12 +137,13 @@ export function ResearchSection() {
                   style={{
                     fontSize: '11px',
                     letterSpacing: '0.2em',
+                    
                   }}
                 >
                   RESEARCH ACHIEVEMENTS
                 </span>
               </div>
-            </motion.div>
+            </motion.div>*/}
 
             {/* Main Title */}
             <AnimatePresence mode="wait">
@@ -199,7 +200,7 @@ export function ResearchSection() {
                   ))}
                 </div>
 
-                {/* Learn More Button */}
+                {/* Learn More Button
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -226,7 +227,7 @@ export function ResearchSection() {
                       transition={{ duration: 0.3 }}
                     />
                   </motion.button>
-                </motion.div>
+                </motion.div>*/}
               </motion.div>
             </AnimatePresence>
           </div>
@@ -301,11 +302,15 @@ export function ResearchSection() {
         className="absolute top-12 left-1/2 -translate-x-1/2 z-20"
       >
         <h1
-          className="text-white text-center"
+          
           style={{
-            fontSize: 'clamp(24px, 3vw, 36px)',
-            fontWeight: 300,
-            letterSpacing: '0.1em',
+            fontSize: 'clamp(60px, 3vw, 36px)',
+            fontWeight: 800,
+            background: 'linear-gradient(135deg, #14b8a6 0%, #06b6d4 50%, #0ea5e9 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            lineHeight: 1.1,
           }}
         >
           研究成果
