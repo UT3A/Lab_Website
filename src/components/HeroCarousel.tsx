@@ -187,9 +187,9 @@ export function HeroCarousel() {
                     //background: 'rgba(255, 183, 77, 0.15)',
                     background: 'rgba(216, 228, 238, 0.15)',
                     //border: '1px solid rgba(255, 152, 0, 0.3)',
-                    border: '1px solid rgba(0, 85, 255, 0.3)',
+                    border: '1px solid rgba(5, 99, 156, 0.37)',
                     //color: '#E65100',
-                    color: '#979bf9ff',
+                    color: 'rgba(2, 119, 189, 1)',
                   }}
                 >
                   {currentSlide.tag}

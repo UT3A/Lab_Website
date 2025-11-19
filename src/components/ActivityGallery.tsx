@@ -97,7 +97,7 @@ export function ActivityGallery() {
               style={{
                 fontSize: 'clamp(16px, 2vw, 20px)',
                 fontWeight: 300,
-                color: 'rgba(255, 255, 255, 0.7)',
+                color: '#0277BD',
                 letterSpacing: '0.15em',
               }}
             >
@@ -116,7 +116,7 @@ export function ActivityGallery() {
               style={{
                 fontSize: 'clamp(48px, 8vw, 96px)',
                 fontWeight: 600,
-                background: 'linear-gradient(135deg, #a855f7 0%, #d946ef 100%)',
+                background: 'linear-gradient(135deg, #14b8a6 0%, #06b6d4 50%, #0ea5e9 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -130,7 +130,7 @@ export function ActivityGallery() {
               style={{
                 fontSize: 'clamp(36px, 6vw, 72px)',
                 fontWeight: 500,
-                color: 'rgba(168, 85, 247, 0.8)',
+                color: '#0ea5e9',
                 lineHeight: 1,
               }}
             >
@@ -189,7 +189,7 @@ export function ActivityGallery() {
                       >
                         <Users className="w-3 h-3 text-purple-400" />
                       </div>
-                      <span style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '11px' }}>
+                      <span style={{ color: '#0277BD', fontSize: '11px' }}>
                         {activity.participants}
                       </span>
                     </div>
@@ -197,7 +197,7 @@ export function ActivityGallery() {
                     {/* Rating */}
                     <div className="flex items-center gap-1">
                       <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" />
-                      <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '11px' }}>
+                      <span style={{ color: '#0277BD', fontSize: '11px' }}>
                         {activity.rating}
                       </span>
                     </div>
@@ -205,7 +205,7 @@ export function ActivityGallery() {
                     {/* Duration */}
                     <div className="flex items-center gap-1">
                       <Clock className="w-3 h-3 text-cyan-400" />
-                      <span style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '11px' }}>
+                      <span style={{ color: '#0277BD', fontSize: '11px' }}>
                         {activity.duration}
                       </span>
                     </div>
@@ -228,7 +228,7 @@ export function ActivityGallery() {
                     style={{
                       fontSize: '12px',
                       fontWeight: 300,
-                      color: 'rgba(255, 255, 255, 0.5)',
+                      color: '#0277BD',
                       lineHeight: 1.6,
                     }}
                   >

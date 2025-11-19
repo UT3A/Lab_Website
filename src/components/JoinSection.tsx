@@ -63,7 +63,7 @@ export function JoinSection() {
               fontSize: '14px',
               fontWeight: 300,
               fontStyle: 'italic',
-              color: 'rgba(255, 255, 255, 0.5)',
+              color: '#0277BD',
               letterSpacing: '0.05em',
             }}
           >
@@ -151,7 +151,7 @@ export function JoinSection() {
                     style={{
                       fontSize: '15px',
                       fontWeight: 400,
-                      color: 'rgba(255, 255, 255, 0.8)',
+                      color: '#0277BD',
                       lineHeight: 1.8,
                     }}
                   >
@@ -161,7 +161,7 @@ export function JoinSection() {
                     style={{
                       fontSize: '14px',
                       fontWeight: 300,
-                      color: 'rgba(255, 255, 255, 0.6)',
+                      color: '#0277BD',
                       lineHeight: 1.8,
                       paddingLeft: '1.5rem',
                     }}
@@ -226,7 +226,7 @@ export function JoinSection() {
                   style={{
                     fontSize: '15px',
                     fontWeight: 400,
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    color: '#0277BD',
                     lineHeight: 1.8,
                   }}
                 >
@@ -303,7 +303,7 @@ export function JoinSection() {
                       style={{
                         fontSize: '12px',
                         fontWeight: 300,
-                        color: 'rgba(255, 255, 255, 0.7)',
+                        color: '#0277BD',
                       }}
                     >
                       {equipment.name}

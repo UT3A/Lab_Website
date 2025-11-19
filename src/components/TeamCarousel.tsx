@@ -55,6 +55,19 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 3,
+    name: '呂芯穎',
+    nameEn: 'Uta',
+    title: '碩一生',
+    role: '碩一生',
+    image: 'img/114/114EP8002_呂芯穎.jpg',
+    email: 't114EP8002@ntut.edu.tw',
+    expertise: ['前端設計', 'Python', '系統分析'],
+    description: `我畢業於中原大學資管系，對大數據和人工智慧有興趣，也有做過相關專題。
+大學時比較擅長系統分析，平常的興趣是攝影、運動、拼樂高、看貓咪吃飯。
+如果找不到人去寵物展可以找我一起去！！`,
+  },
+  {
+    id: 4,
     name: '張同學',
     nameEn: 'Chang',
     title: '碩士生',
@@ -64,7 +77,7 @@ const teamMembers: TeamMember[] = [
     description: '智慧行銷',
   },
   {
-    id: 4,
+    id: 5,
     name: '林同學',
     nameEn: 'Lin',
     title: '碩士生',
@@ -74,7 +87,7 @@ const teamMembers: TeamMember[] = [
     description: '社群運算',
   },
   {
-    id: 5,
+    id: 6,
     name: '黃同學',
     nameEn: 'Huang',
     title: '碩士生',
@@ -83,18 +96,7 @@ const teamMembers: TeamMember[] = [
     expertise: ['企業智慧'],
     description: '企業智慧',
   },
-  {
-    id: 6,
-    name: '呂同學',
-    nameEn: 'Lu',
-    title: '碩士生',
-    role: 'Master Student',
-    image: 'img/114/114EP8002_呂芯穎.jpg',
-    expertise: ['前端設計', 'Python', '系統分析'],
-    description: `我畢業於中原大學資管系，對大數據和人工智慧有興趣，也有做過相關專題。
-大學時比較擅長系統分析，平常的興趣是攝影、運動、拼樂高、看貓咪吃飯。
-如果找不到人去寵物展可以找我一起去！！`,
-  },
+  
 ];
 
 // 模態框組件 (根據圖片重新設計樣式)
@@ -214,18 +216,16 @@ const MemberDetailModal: React.FC<MemberDetailModalProps> = ({ member, onClose }
             {/* 底部：近期成果 / 聯絡方式 */}
             {member.email && (
                 <div className="pt-6 border-t border-slate-200 mt-6">
-                    <h4 className="text-lg font-medium text-slate-800 mb-3">
+                    {/*<h4 className="text-lg font-medium text-slate-800 mb-3">
                         近期成果
-                    </h4>
+                    </h4>*/}
                     <ul className='list-disc list-inside space-y-2 text-slate-600 text-sm'>
-                        {/* 這裡我們將聯絡信箱作為一個項目顯示，如同圖中所示 */}
                         <li className='flex items-start'>
                             <span className="inline-block mr-2">
                                 {/* MAIL : T114EP8002@ntut.org.tw */}
                                 MAIL : {member.email}
                             </span>
                         </li>
-                        {/* 您可以在這裡新增更多項目，例如近期發表的論文或專題 */}
                     </ul>
                 </div>
             )}
@@ -515,60 +515,69 @@ export function TeamCarousel() {
                     />
                   </motion.div>
 
-                  {/* Professor Info */}
-                  <div className="flex-1 space-y-3 text-center md:text-left">
-                    <div>
-                      <h3
-                        style={{
-                          fontSize: '28px',
-                          fontWeight: 300,
-                          color: '#0277BD',
-                          marginBottom: '4px',
-                        }}
-                      >
-                        {professor.name}
-                      </h3>
-                      <p
-                        style={{
-                          fontSize: '14px',
-                          color: 'rgba(14, 165, 233, 0.8)',
-                          letterSpacing: '0.05em',
-                        }}
-                      >
-                        {professor.role}
-                      </p>
-                    </div>
-
-                    <p
-                      style={{
-                        fontSize: '13px',
-                        color: '#0277BD',
-                        lineHeight: 1.7,
-                      }}
+                  {/* Professor Info - Updated to include Link */}
+                  <div className="flex-1 text-center md:text-left">
+                    
+                    {/* Main Info Link */}
+                    <a 
+                      href="https://ljcheng.tw/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block space-y-3 cursor-pointer hover:opacity-80 transition-opacity"
                     >
-                      {professor.description}
-                    </p>
-
-                    {/* Expertise Tags */}
-                    <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                      {professor.expertise.map((skill, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 rounded-full text-xs"
-                          style={{
-                            background: 'rgba(255, 255, 255, 0.64)',
+                        <div>
+                        <h3
+                            style={{
+                            fontSize: '28px',
+                            fontWeight: 300,
                             color: '#0277BD',
-                            border: '1px solid rgba(14, 165, 233, 0.3)',
-                          }}
+                            marginBottom: '4px',
+                            }}
                         >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
+                            {professor.name}
+                        </h3>
+                        <p
+                            style={{
+                            fontSize: '14px',
+                            color: 'rgba(14, 165, 233, 0.8)',
+                            letterSpacing: '0.05em',
+                            }}
+                        >
+                            {professor.role}
+                        </p>
+                        </div>
 
-                    {/* Contact */}
+                        <p
+                        style={{
+                            fontSize: '13px',
+                            color: '#0277BD',
+                            lineHeight: 1.7,
+                        }}
+                        >
+                        {professor.description}
+                        </p>
+
+                        {/* Expertise Tags */}
+                        <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                        {professor.expertise.map((skill, index) => (
+                            <span
+                            key={index}
+                            className="px-3 py-1 rounded-full text-xs"
+                            style={{
+                                background: 'rgba(255, 255, 255, 0.64)',
+                                color: '#0277BD',
+                                border: '1px solid rgba(14, 165, 233, 0.3)',
+                            }}
+                            >
+                            {skill}
+                            </span>
+                        ))}
+                        </div>
+                    </a>
+
+                    {/* Contact - Kept outside the main link to avoid nested anchors */}
                     {professor.email && (
-                      <div className="flex items-center gap-3 justify-center md:justify-start pt-2">
+                      <div className="flex items-center gap-3 justify-center md:justify-start pt-2 mt-1">
                         <a
                           href={`mailto:${professor.email}`}
                           className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
